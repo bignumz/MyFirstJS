@@ -65,3 +65,20 @@ const isChecked = true,
 
 console.log(isChecked && isClose);
 console.log(isChecked || !isClose);
+
+
+/* *** Git Instructions ***
+1) git init (initialized empty Git repository in /home/)
+2) git config --local user.name "Nursultan"
+3) git config --local user.email exmaple@gmail.com
+4) git config --global user.email example@gmail.com
+5) git status
+5) git add -A / 
+6) git commit -a -m"first commit"
+7) git log (Shows changes)
+8) git remote add origin https://github.com/bignumz/bignumz.git
+9) git branch -M main / master
+10) git push -u origin main
+11) git clone https://github.com/bignumz/MyFirstJS.git gitclone ("gitclone")
+*/
+
