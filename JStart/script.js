@@ -300,11 +300,25 @@ function start (numberOfFilms) {
 
 start(); */ 
 
-let areYouReady = confirm('Are you ready?');
+/* let areYouReady = confirm('Are you ready?');
 alert (areYouReady); 
     if (areYouReady == true) {
         alert("Let's go!");
     } else {
         alert("You are not ready!");
+    } */ 
+
+    /* const str = prompt ("","");
+    const products = str.split(", ");
+    products.sort(); // Сортирует только строки
+    console.log(products.join('; '));  */ 
+
+
+    const arr = [2, 13, 26, 8, 10]; 
+    arr.sort(compareNum);
+    console.log(arr);
+
+    function compareNum(a, b){ 
+        return a -b;
     }
 
