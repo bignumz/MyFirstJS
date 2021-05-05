@@ -82,3 +82,178 @@ console.log(isChecked || !isClose);
 11) git clone https://github.com/bignumz/MyFirstJS.git gitclone ("gitclone")
 */
 
+//Операторы условия
+if (4 == 9) {
+    console.log('Ok');
+} else {
+    console.log('Error');
+} 
+
+ const num = 50;
+
+ if (num < 49) {
+    console.log('Error');
+} else if (num > 100) {
+    console.log('Много');
+} else {
+    console.log('Ok');
+} 
+
+// Тенарный аргумент
+(num === 50) ? console.log('Ok') : console.log('Error');
+
+// Использование "switch" "case" "break" "default" Сравнение === 
+const nummm = 50;
+
+switch (nummm) {
+    case 49:
+        console.log('Неверно');
+        break;
+            case 100:
+            console.log('Неверно');
+        break;
+            case 50:
+            console.log('Неверно');
+        break;
+            default:
+            console.log('Не в этот раз')
+        break;
+} 
+
+// Циклы "While" "do" 
+let numm = 50;
+
+ while (numm <= 55) {
+    console.log(numm);
+    numm++;
+} 
+
+do {
+    console.log(numm);
+    numm++;
+}
+while(num < 55);
+
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        /*break;*/
+        continue;
+    }
+    console.log(i);
+}
+
+// Функции / FUCTION DECLARATION 
+
+"use strict"; 
+
+let nom = 20; 
+
+function showFirstMessage(text) {
+    console.log(text);
+    let nom = 10;
+    console.log(nom);   
+}
+
+showFirstMessage("Hello World!");
+console.log(nom);   
+
+function calc (a,b) { 
+    return (a + b);
+    // console.log("Unreachable code");
+}
+
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 6));
+
+function ret(){
+    let num = 50; 
+
+    //  
+
+
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+//  функции / FUNCTION EXPRESSION 
+
+const logger = function () {
+    console.log("Hello");
+};
+
+logger(); 
+
+// Функции / СТРЕЛОЧНАЯ ФУНКЦИЯ 
+
+const calcul = (a,b) => a + b; 
+// { a + b }
+console.log(calcul(4,4));
+
+
+// Функции /  СALL BACK / Сначала выполняется первая функция 
+// только потом выполняется вторая.
+
+"use strict";
+
+function first() {
+    // Do something 
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log(`Я учу: ${lang}`);
+    callback();
+}
+
+function done () {
+    console.log ('Я прошел этот урок!');
+}
+
+learnJS('JavaScript', done);
+
+// ОБЪЕКТЫ 
+
+"use strict";
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
+};
+
+console.log(options["colors"]["border"]);
+
+// delete options.name;
+
+// console.log(options);
+
+for (let key in options) {
+    if (typeof(options[key]) === 'object'){
+        for(let i in options[key]){
+            console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+    }
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+}
+
+
+
+
